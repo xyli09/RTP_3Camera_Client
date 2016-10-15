@@ -15,3 +15,7 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+.cpp filter=lfs diff=lfs merge=lfs -text
+.h filter=lfs diff=lfs merge=lfs -text
+.txt filter=lfs diff=lfs merge=lfs -text
+.jpg filter=lfs diff=lfs merge=lfs -text
