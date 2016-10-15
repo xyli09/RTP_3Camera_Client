@@ -110,7 +110,7 @@ void CRtpTransport::testDecoder(unsigned char *nalBuf, int nBufLen, unsigned cha
 							if (avpicture_alloc((AVPicture *)ffmpegobj.m_pRGBFrame, PIX_FMT_RGB24, ffmpegobj.c->width, ffmpegobj.c->height) >= 0)
 							{
 								sws_scale(ffmpegobj.scxt, ffmpegobj.m_pYUVFrame->data, ffmpegobj.m_pYUVFrame->linesize, 0,
-									ffmpegobj.c->height, ffmpegobj.m_pRGBFrame->data, ffmpegobj.m_pRGBFrame->linesize);   //±àÂë
+									ffmpegobj.c->height, ffmpegobj.m_pRGBFrame->data, ffmpegobj.m_pRGBFrame->linesize);   //½âÂëÆ÷
 								//wcout<<ffmpegobj.m_pRGBFrame->pts;
 								//stringstream sstr;
 								
