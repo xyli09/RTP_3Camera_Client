@@ -13,8 +13,8 @@ CRtpTransport::CRtpTransport(void)
 ,m_nDestPort(0)
 ,m_nPortBase(3000)
 {
-	m_uWidth = 640;             //自己定义的，我晕！！
-	m_uHeight = 480;
+	m_uWidth = 1280;// 640;             //自己定义的，我晕！！
+	m_uHeight = 720;// 480;
 	bgrImg = cvCreateImage(cvSize( m_uWidth, m_uHeight ), IPL_DEPTH_8U, 3);
 	WSADATA wsaData;
 	WORD wVersionRequested = MAKEWORD( 2, 2 );
